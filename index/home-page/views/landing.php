@@ -40,7 +40,7 @@
                         </div>
                       </div>
                     </form>
-                    </div>
+                  </div>
                   </div>
 
                   <div class='row' id='createAccount'>
@@ -71,6 +71,7 @@
                           </div>
                         </div>
                       </form>
+                    </div>
                     </div>
 
                 </div>
