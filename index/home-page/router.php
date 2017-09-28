@@ -8,9 +8,7 @@
     } elseif($req2 == "create_account"){
       $controller->create_account();
     } elseif($req2 == "login"){
-      echo "login";
-    } elseif($req2 == "logout"){
-      echo "logout";
+      $controller->login();
     }
   }
  ?>

@@ -16,6 +16,10 @@
     public function create_account(){
       $this->homeDAL->create_account();
     }
+
+    public function login(){
+      $this->homeDAL->login();
+    }
   }
 
 

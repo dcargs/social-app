@@ -8,11 +8,11 @@ if (!isset($_GET['key1'])) {
     if ($req1 == "home") {
         require "home-page/router.php";
         route($_GET['key2']);
+    } elseif($req1 == "hub"){
+      require "hub/router.php";
+      route($_GET['key2']);
     }
-    // elseif($req1 == "it"){
-    //   require "tcic_it/router.php";
-    //   route($_GET['key2']);
-    // } elseif($req1 == 'hr'){
+    // elseif($req1 == 'hr'){
     //   require "tcic_hr/router.php";
     //   route($_GET['key2']);
     // }
