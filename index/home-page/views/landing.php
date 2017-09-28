@@ -29,7 +29,7 @@
                       </div>
                       <div class='form-group'>
                         <div class='col-sm-offset-2 col-sm-10'>
-                          <button type='submit' class='btn btn-default' onclick='loginValidate()'>Login</button>
+                          <button type='submit' class='btn btn-default' onclick='return loginValidate()'>Login</button>
                         </div>
                       </div>
                     </form>
@@ -77,7 +77,7 @@
                         </div>
                         <div class='form-group'>
                           <div class='col-sm-offset-2 col-sm-10'>
-                            <button type='submit' class='btn btn-default' onclick='createAccountValidate()'>Create Account</button>
+                            <button type='submit' class='btn btn-default' onclick='return createAccountValidate()'>Create Account</button>
                           </div>
                         </div>
                       </form>
