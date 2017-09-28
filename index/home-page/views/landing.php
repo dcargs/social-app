@@ -9,7 +9,7 @@
 
                 <div class='row' id='choiceButtons'>
                   <button type='button' class='btn btn-success btn-lg' onclick='loginForm()'>Login</button>
-                  <button type='button' class='btn btn-success btn-lg' onclick='createAccountForm()'>Create Account</button>
+                  <button type='button' class='btn btn-info btn-lg' onclick='createAccountForm()'>Create Account</button>
                 </div>
 
                 <div class='row' id='login'>
