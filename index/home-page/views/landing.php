@@ -3,5 +3,5 @@
   $onscreen_title = "Login";
   $content = "<h3>Please login</h3>";
 
-  require "/index/home/statics/layout.php";
+  require "statics/layout.php";
  ?>
