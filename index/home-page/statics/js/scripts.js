@@ -1,5 +1,5 @@
 $(function(){
-  $("#login", "#createAccount").hide()
+  $("#login", "#createAccount").hide();
 });
 
 function loginForm(){
