@@ -29,13 +29,6 @@
                       </div>
                       <div class='form-group'>
                         <div class='col-sm-offset-2 col-sm-10'>
-                          <div class='checkbox'>
-                            <label><input type='checkbox'> Remember me</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class='form-group'>
-                        <div class='col-sm-offset-2 col-sm-10'>
                           <button type='submit' class='btn btn-default'>Login</button>
                         </div>
                       </div>
@@ -47,9 +40,9 @@
                     <div class='col-md-10'>
                       <form class='form-horizontal'>
                         <div class='form-group'>
-                          <label class='control-label col-sm-2' for='email'>Email:</label>
+                          <label class='control-label col-sm-2' for='alias'>Alias:</label>
                           <div class='col-sm-10'>
-                            <input type='email' class='form-control' id='email' placeholder='Enter email'>
+                            <input type='text' class='form-control' id='alias' placeholder='Enter alias'>
                           </div>
                         </div>
                         <div class='form-group'>
@@ -59,10 +52,27 @@
                           </div>
                         </div>
                         <div class='form-group'>
-                          <div class='col-sm-offset-2 col-sm-10'>
-                            <div class='checkbox'>
-                              <label><input type='checkbox'> Remember me</label>
-                            </div>
+                          <label class='control-label col-sm-2' for='f_name'>First Name:</label>
+                          <div class='col-sm-10'>
+                            <input type='text' class='form-control' id='f_name' placeholder='Enter First Name'>
+                          </div>
+                        </div>
+                        <div class='form-group'>
+                          <label class='control-label col-sm-2' for='m_name'>Middle Name:</label>
+                          <div class='col-sm-10'>
+                            <input type='text' class='form-control' id='m_name' placeholder='Enter Middle Name'>
+                          </div>
+                        </div>
+                        <div class='form-group'>
+                          <label class='control-label col-sm-2' for='l_name'>Last Name:</label>
+                          <div class='col-sm-10'>
+                            <input type='text' class='form-control' id='l_name' placeholder='Enter Last Name'>
+                          </div>
+                        </div>
+                        <div class='form-group'>
+                          <label class='control-label col-sm-2' for='email'>Email:</label>
+                          <div class='col-sm-10'>
+                            <input type='email' class='form-control' id='email' placeholder='Enter Email'>
                           </div>
                         </div>
                         <div class='form-group'>
