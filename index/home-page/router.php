@@ -9,6 +9,8 @@
       $controller->create_account();
     } elseif($req2 == "login"){
       $controller->login();
+    } elseif($req2 == "hub"){
+      $controller->hub();
     }
   }
  ?>

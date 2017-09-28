@@ -9,8 +9,11 @@
     }
 
     public function landing(){
-
       require "views/landing.php";
+    }
+
+    public function hub(){
+      require "views/hub.php";
     }
 
     public function create_account(){

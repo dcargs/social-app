@@ -39,7 +39,7 @@
           session_start();
           $_SESSION['status'] = "authenticated";
           $_SESSION['alias'] = $alias;
-          header("Location: ../hub");
+          header("Location: hub");
         } else {
           echo "incorrect password";
         }

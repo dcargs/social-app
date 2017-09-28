@@ -1,7 +1,7 @@
 <?php
-  $title = "Logged In";
+  $title = "Your Profile";
   $onscreen_title = "My Profile";
   $content = "Welcome";
 
-  require "hub/statics/layout.php";
+  require "home-page/statics/layout.php";
  ?>
