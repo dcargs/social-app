@@ -17,7 +17,7 @@
         );
         $stmt->bind_param("ssssss", $alias, $pass, $f_name, $m_name, $l_name, $email);
         $stmt->execute();
-        header("Location: home");
+        header("Location: /home");
       } else {
         echo "alias / email already in use";
       }
