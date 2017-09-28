@@ -18,7 +18,7 @@
                       <div class='form-group'>
                         <label class='control-label col-sm-2' for='alias'>Alias:</label>
                         <div class='col-sm-10'>
-                          <input type='email' class='form-control login' name='alias' id='alias' placeholder='Enter Alias'>
+                          <input type='text' class='form-control login' name='alias' id='alias' placeholder='Enter Alias'>
                         </div>
                       </div>
                       <div class='form-group'>
