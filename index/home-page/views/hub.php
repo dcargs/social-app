@@ -1,7 +1,6 @@
 <?php
   $title = "Your Profile";
   $onscreen_title = "My Profile";
-  session_start();
   $alias = $_SESSION['alias'];
   $content = "
     <div class='jumbotron'>
