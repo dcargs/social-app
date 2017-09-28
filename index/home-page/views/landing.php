@@ -7,7 +7,7 @@
                 </div>
                 <hr />
 
-                <div class='row' id='choiceButtons'>
+                <div class='row text-center' id='choiceButtons'>
                   <button type='button' class='btn btn-success btn-lg' onclick='loginForm()'>Login</button>
                   <button type='button' class='btn btn-info btn-lg' onclick='createAccountForm()'>Create Account</button>
                 </div>
