@@ -4,7 +4,7 @@
     private $homeDAL;
 
     function __construct() {
-      require ("/home-page/model/homeDAL.php");
+      require ("model/homeDAL.php");
       $this->homeDAL = new homeDAL;
     }
 
