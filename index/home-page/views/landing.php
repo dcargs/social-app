@@ -14,7 +14,7 @@
 
                 <div class='row' id='login' hidden>
                   <div class='col-md-10'>
-                    <form class='form-horizontal' action='/login' method='post' id='loginForm'>
+                    <form class='form-horizontal' action='home/login' method='post' id='loginForm'>
                       <div class='form-group'>
                         <label class='control-label col-sm-2' for='alias'>Alias:</label>
                         <div class='col-sm-10'>

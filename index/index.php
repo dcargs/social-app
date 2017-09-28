@@ -12,10 +12,6 @@ if (!isset($_GET['key1'])) {
       require "hub/router.php";
       route($_GET['key2']);
     }
-    // elseif($req1 == 'hr'){
-    //   require "tcic_hr/router.php";
-    //   route($_GET['key2']);
-    // }
     else {
       echo "Where are you going?";
     }
