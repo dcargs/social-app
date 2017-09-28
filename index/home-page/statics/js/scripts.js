@@ -16,7 +16,7 @@ function createAccountForm(){
 function loginValidate(){
   var inputs = $(".login");
   for (var i = 0; i < inputs.length; i++) {
-    if(inputs.val() == ""){
+    if(inputs[i].value == ""){
       alert("All elements must be filled out");
       return false;
     }
@@ -26,7 +26,7 @@ function loginValidate(){
 function createAccountValidate(){
   var inputs = $(".create_account");
   for (var i = 0; i < inputs.length; i++) {
-    if(inputs[i].val() == ""){
+    if(inputs[i].value == ""){
       alert("All elements must be filled out");
       return false;
     }
