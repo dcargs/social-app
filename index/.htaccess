@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI}  ^/([^/]+)/?([^/]*)/?([^/]*)/? [NC]
+RewriteRule .*    index.php?key1=%1&key2=%2&key3=%3  [L]
