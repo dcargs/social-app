@@ -13,6 +13,7 @@
     }
 
     public function hub(){
+      $this->check_status();
       require "views/hub.php";
     }
 
@@ -22,6 +23,19 @@
 
     public function login(){
       $this->homeDAL->login();
+    }
+
+    private function check_status(){
+      session_start();
+      if(isset($_SESSION['status'])){
+        if($_SESSION['status'] == "authenticated"){
+
+        } else {
+          header("Location: /home");
+        }
+      } else {
+        header("Location: /home");
+      }
     }
   }
 
