@@ -15,20 +15,20 @@ function createAccountForm(){
 
 function loginValidate(){
   var inputs = $(".login");
-  if(inputs.val() == ""){
-    alert("All elements must be filled out");
-    return false;
-  } else {
-    $("#loginForm").submit();
+  for (var i = 0; i < inputs.length; i++) {
+    if(inputs.val() == ""){
+      alert("All elements must be filled out");
+      return false;
+    }
   }
 }
 
 function createAccountValidate(){
   var inputs = $(".create_account");
-  if(inputs.val() == ""){
-    alert("All elements must be filled out");
-    return false;
-  } else {
-    $("#createAccountForm").submit();
+  for (var i = 0; i < inputs.length; i++) {
+    if(inputs[i].val() == ""){
+      alert("All elements must be filled out");
+      return false;
+    }
   }
 }
