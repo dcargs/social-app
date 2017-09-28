@@ -5,12 +5,12 @@
 
     if($req2 == ""){
       $controller->landing();
+    } elseif($req2 == "create_account"){
+      echo "create_account";
     } elseif($req2 == "login"){
-      $controller->login();
-    } elseif($req2 == "hub"){
-      $controller->hub();
+      echo "login";
     } elseif($req2 == "logout"){
-      $controller->logout();
+      echo "logout";
     }
   }
  ?>

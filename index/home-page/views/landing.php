@@ -14,7 +14,7 @@
 
                 <div class='row' id='login' hidden>
                   <div class='col-md-10'>
-                    <form class='form-horizontal'>
+                    <form class='form-horizontal' action='login' method='post'>
                       <div class='form-group'>
                         <label class='control-label col-sm-2' for='email'>Email:</label>
                         <div class='col-sm-10'>
@@ -38,7 +38,7 @@
 
                   <div class='row' id='createAccount' hidden>
                     <div class='col-md-10'>
-                      <form class='form-horizontal'>
+                      <form class='form-horizontal' action='create_account' method='post'>
                         <div class='form-group'>
                           <label class='control-label col-sm-2' for='alias'>Alias:</label>
                           <div class='col-sm-10'>
