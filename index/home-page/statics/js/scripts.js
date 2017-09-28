@@ -1,6 +1,6 @@
 $(function(){
-  $("#login").slideUp();
-  $("#createAccount").slideUp();
+  $("#login").hide();
+  $("#createAccount").hide();
 });
 
 function loginForm(){
