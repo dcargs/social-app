@@ -12,3 +12,19 @@ function createAccountForm(){
   $("#createAccount").slideToggle();
   $("#choiceButtons").slideToggle();
 }
+
+function loginValidate(){
+  if($(".login").val() == ""){
+    alert("All elements must be filled out");
+  } else {
+    $("#loginForm").submit();
+  }
+}
+
+function createAccountValidate(){
+  if($(".create_account").val() == ""){
+    alert("All elements must be filled out");
+  } else {
+    $("#createAccountForm").submit();
+  }
+}
