@@ -14,7 +14,8 @@ function createAccountForm(){
 }
 
 function loginValidate(){
-  if($(".login").val() == ""){
+  var inputs = $(".login");
+  if(inputs.val() == ""){
     alert("All elements must be filled out");
     return false;
   } else {
@@ -23,7 +24,8 @@ function loginValidate(){
 }
 
 function createAccountValidate(){
-  if($(".create_account").val() == ""){
+  var inputs = $(".create_account");
+  if(inputs.val() == ""){
     alert("All elements must be filled out");
     return false;
   } else {
