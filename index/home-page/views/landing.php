@@ -12,7 +12,7 @@
                   <button type='button' class='btn btn-info btn-lg' onclick='createAccountForm()'>Create Account</button>
                 </div>
 
-                <div class='row' id='login'>
+                <div class='row' id='login' hidden>
                   <div class='col-md-10'>
                     <form class='form-horizontal'>
                       <div class='form-group'>
@@ -43,7 +43,7 @@
                   </div>
                   </div>
 
-                  <div class='row' id='createAccount'>
+                  <div class='row' id='createAccount' hidden>
                     <div class='col-md-10'>
                       <form class='form-horizontal'>
                         <div class='form-group'>
