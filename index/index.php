@@ -6,7 +6,7 @@ if (!isset($_GET['key1'])) {
 } else {
     $req1 = $_GET['key1'];
     if ($req1 == "home") {
-        require "home/router.php";
+        require "home-page/router.php";
         route($_GET['key2']);
     }
     // elseif($req1 == "it"){
