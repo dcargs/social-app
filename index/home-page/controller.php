@@ -1,8 +1,7 @@
 <?php
 
   class home_controller {
-
-    $homeDAL;
+    private $homeDAL;
 
     function __construct() {
       require ("/home-page/model/homeDAL.php");
