@@ -6,7 +6,7 @@
     if($req2 == ""){
       $controller->landing();
     } elseif($req2 == "create_account"){
-      echo "create_account";
+      $controller->create_account();
     } elseif($req2 == "login"){
       echo "login";
     } elseif($req2 == "logout"){
