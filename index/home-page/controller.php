@@ -1,10 +1,11 @@
 <?php
 
   class home_controller {
-    require ("/home-page/model/homeDAL.php");
+
     $homeDAL;
 
     function __construct() {
+      require ("/home-page/model/homeDAL.php");
       $this->homeDAL = new homeDAL;
     }
 
