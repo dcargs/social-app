@@ -1,6 +1,7 @@
 $(function(){
   $("#login").hide();
   $("#createAccount").hide();
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
 function loginForm(){

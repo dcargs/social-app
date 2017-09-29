@@ -17,6 +17,16 @@
       require "views/hub.php";
     }
 
+    public function messages(){
+
+      require "views/messages.php";
+    }
+
+    public function friends(){
+
+      require "views/friends.php";
+    }
+
     public function create_account(){
       $this->homeDAL->create_account();
     }

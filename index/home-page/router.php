@@ -11,6 +11,10 @@
       $controller->login();
     } elseif($req2 == "hub"){
       $controller->hub();
+    } elseif($req2 == "messages"){
+      $controller->messages();
+    } elseif($req2 == "friends"){
+      $controller->friends();
     }
   }
  ?>
