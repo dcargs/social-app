@@ -21,7 +21,7 @@
 
   $content = "<div class='jumbotron'>
                 ".$people."
-              </div>"
+              </div>";
 
 
 
