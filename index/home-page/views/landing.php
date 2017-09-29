@@ -39,7 +39,7 @@
 
                   <div class='row' id='createAccount' hidden>
                     <div class='col-md-10'>
-                      <form class='form-horizontal' action='create_account' method='post' id='createAccountForm'>
+                      <form class='form-horizontal' action='home/create_account' method='post' id='createAccountForm'>
                         <div class='form-group'>
                           <label class='control-label col-sm-2' for='alias'>Alias:</label>
                           <div class='col-sm-10'>

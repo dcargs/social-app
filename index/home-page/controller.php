@@ -31,14 +31,15 @@
     }
 
     public function friends(){
-
+      $people = $this->get_people();
       require "views/friends.php";
     }
 
     // End views
 
     private function get_people(){
-
+      $people = $this->friendDAL->get_everyone();
+      return $people;
     }
 
     public function create_account(){
