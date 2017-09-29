@@ -16,7 +16,7 @@
       foreach ($row as $i => $value) {
         $people .= "<td>".$value."</td>";
       }
-      $alias = "'".$row[0]."'";
+      $alias = '"'.$row[0].'"';
       $people .= "<td><button type='button' class='btn btn-primary btn-block' onclick='sendRequest(".$alias.")'>Send Request</button></td>";
     $people .= "</tr>";
   }
