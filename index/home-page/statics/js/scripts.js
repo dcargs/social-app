@@ -3,6 +3,11 @@ $(function(){
   $("#createAccount").hide();
 });
 
+function sendRequest(alias){
+  $(this).attr("disabled", true);
+  console.log(alias);
+}
+
 function loginForm(){
   $("#login").slideToggle();
   $("#choiceButtons").slideToggle();
