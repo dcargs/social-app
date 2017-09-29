@@ -4,7 +4,7 @@ $(function(){
 });
 
 function sendRequest(alias){
-  $(this).html("request sent");
+  $("#" + alias).attr("disabled", true);
   console.log(alias);
 }
 

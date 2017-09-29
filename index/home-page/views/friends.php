@@ -17,7 +17,7 @@
         $people .= "<td>".$value."</td>";
       }
       $alias = '"'.$row[0].'"';
-      $people .= "<td><button type='button' class='btn btn-primary btn-block' onclick='sendRequest(".$alias.")'>Send Request</button></td>";
+      $people .= "<td><button type='button' id='".$row[0]."' class='btn btn-primary btn-block' onclick='sendRequest(".$alias.")'>Send Request</button></td>";
     $people .= "</tr>";
   }
   $people .= "</tbody></table>";
