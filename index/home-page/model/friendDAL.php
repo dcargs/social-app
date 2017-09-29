@@ -43,6 +43,16 @@
       $stmt->execute();
     }
 
+    public function get_friends($me){
+      $stmt = $this->conn->prepare(
+        "SELECT user1, user2 WHERE user1 = ? OR user2 = ? AND accepted = 1"
+      );
+      $stmt->bind_param("ss", $me, $me);
+      $stmt->execute();
+      $result = $stmt->get_result();
+      return $result;
+    }
+
   }
 
 
