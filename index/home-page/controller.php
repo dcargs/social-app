@@ -31,7 +31,7 @@
     }
 
     public function friends(){
-      $people = $this->get_people();
+      $result = $this->get_people();
       require "views/friends.php";
     }
 
