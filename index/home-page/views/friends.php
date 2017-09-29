@@ -6,12 +6,12 @@
                    <li><a href='messages'>Messages</a></li>";
 
   $people = "<table style='overflow: auto;'class='table rounded table-striped table-responsive table-bordered'><thead>";
-  while($fieldName = mysqli_fetch_field($result)) {
+  while($fieldName = mysqli_fetch_field($everyone)) {
     $people .= "<th class='text-center'>" . $fieldName->name . "</th>";
   }
   $people .= "<th class='text-center'>Request</th>";
   $people .= "</thead><tbody>";
-  while($row = $result->fetch_array(MYSQLI_NUM)) {
+  while($row = $everyone->fetch_array(MYSQLI_NUM)) {
     $people .= "<tr>";
       foreach ($row as $i => $value) {
         $people .= "<td>".$value."</td>";
@@ -21,6 +21,15 @@
     $people .= "</tr>";
   }
   $people .= "</tbody></table>";
+
+  $friend_requests = "<div class='well'>";
+  while($row = $requests->fetch_assoc()){
+    $friend_requests .= "<div class='row'>";
+    $friend_requests .= "<p>".$row['user2']." sent you a friend request.</p>";
+    $friend_requests .= "<button type='button' id='".$row['id']."' class='btn btn-primary btn-block' onclick='respondRequest(".$row['id'].")'>Accept</button>";
+    $friend_requests .= "</div><hr />";
+  }
+  $friend_requests .= "</div>";
 
   $content = "<div class='jumbotron'>
                 ".$people."

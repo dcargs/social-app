@@ -25,6 +25,15 @@
       $stmt->execute();
     }
 
+    public function get_requests($me){
+      $stmt = $this->conn->prepare(
+        "SELECT id, user2 FROM friends WHERE user1 = ? AND accepted = 0"
+      );
+      $stmt->bind_param("s", $me);
+      $stmt->execute();
+      $result = $stmt->get_result();
+    }
+
   }
 
 

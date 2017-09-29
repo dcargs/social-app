@@ -31,7 +31,8 @@
     }
 
     public function friends(){
-      $result = $this->get_people();
+      $everyone = $this->get_people();
+      $requests = $this->get_requests();
       require "views/friends.php";
     }
 
@@ -48,6 +49,12 @@
       } else {
         echo "something went wrong";
       }
+    }
+
+    private function get_requests(){
+      session_start();
+      $me = $_SESSION['alias'];
+      return $this->friendDAL->get_requests($me);
     }
 
     private function add_friend(){
