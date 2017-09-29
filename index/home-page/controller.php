@@ -51,6 +51,7 @@
     }
 
     private function add_friend(){
+      session_start();
       $me = $_SESSION['alias'];
       $alias = $_POST['alias'];
       echo "" . $me . $alias;
