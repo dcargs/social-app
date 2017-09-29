@@ -5,7 +5,7 @@
                    <li class='active'><a href='friends'>Friends</a></li>
                    <li><a href='messages'>Messages</a></li>";
 
-  $people = "<span class='label label-primary'>List of Users</span><table style='overflow: auto;'class='table rounded table-striped table-responsive table-bordered'><thead>";
+  $people = "<h2><span class='label label-primary'>List of Users</span></h2><table style='overflow: auto;'class='table rounded table-striped table-responsive table-bordered'><thead>";
   while($fieldName = mysqli_fetch_field($everyone)) {
     $people .= "<th class='text-center'>" . $fieldName->name . "</th>";
   }
@@ -22,14 +22,21 @@
   }
   $people .= "</tbody></table>";
 
-  $friend_requests = "<div class='well'><h3><span class='label label-primary'>Friend Requests</span></h3>";
-  while($row = $requests->fetch_assoc()){
-    $friend_requests .= "<ul class='list-group'>";
-    $friend_requests .= "<li class='list-group-item'>".$row['user2']." sent you a friend request.   ";
-    $friend_requests .= "<button type='button' id='".$row['id']."' class='btn btn-primary' onclick='respondRequest(".$row['id'].")'>Accept</button></li>";
-    $friend_requests .= "</ul><hr />";
+  if($requests->num_rows > 0){
+    $friend_requests = "<div class='well'><h2><span class='label label-primary'>Friend Requests</span></h2>";
+    while($row = $requests->fetch_assoc()){
+      $friend_requests .= "<ul class='list-group'>";
+      $friend_requests .= "<li class='list-group-item'>".$row['user2']." sent you a friend request.   ";
+      $friend_requests .= "<button type='button' id='".$row['id']."' class='btn btn-primary' onclick='respondRequest(".$row['id'].")'>Accept</button></li>";
+      $friend_requests .= "</ul><hr />";
+    }
+    $friend_requests .= "</div><hr />";
+  } else {
+    $friend_requests = "<div class='well'><h2><span class='label label-primary'>Friend Requests</span></h2>";
+    $friend_requests .= "<h4>You have no new friend requests</h4>";
+    $friend_requests .= "</div>";
   }
-  $friend_requests .= "</div><hr />";
+
 
   $content = "<div class='jumbotron'>
                 ".$friend_requests."
