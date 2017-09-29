@@ -25,7 +25,7 @@
   $friend_requests = "<div class='well'><h3><span class='label label-primary'>Friend Requests</span></h3>";
   while($row = $requests->fetch_assoc()){
     $friend_requests .= "<ul class='list-group'>";
-    $friend_requests .= "<li class='list-group-item'>".$row['user2']." sent you a friend request.";
+    $friend_requests .= "<li class='list-group-item'>".$row['user2']." sent you a friend request.   ";
     $friend_requests .= "<button type='button' id='".$row['id']."' class='btn btn-primary' onclick='respondRequest(".$row['id'].")'>Accept</button></li>";
     $friend_requests .= "</ul><hr />";
   }
