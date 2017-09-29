@@ -43,12 +43,19 @@
         $action = $_POST['action'];
         switch ($action) {
           case 'add_friend': $this->add_friend(); break;
+          case 'respond_request': $this->respond_request(); break;
 
           default: echo "case not defined in post_hub"; break;
         }
       } else {
         echo "something went wrong";
       }
+    }
+
+    private function respond_request(){
+      $me = $_SESSION['alias'];
+      $id = $_POST['id'];
+      $this->friendDAL->respond_request($id, $me);
     }
 
     private function get_requests(){

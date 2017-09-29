@@ -35,6 +35,14 @@
       return $result;
     }
 
+    public function respond_request($id, $me){
+      $stmt = $this->conn->prepare(
+        "UPDATE friends SET accepted = 1 WHERE id = ?"
+      );
+      $stmt->bind_param("i", $id);
+      $stmt->execute();
+    }
+
   }
 
 

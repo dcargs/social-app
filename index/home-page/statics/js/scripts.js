@@ -11,6 +11,18 @@ function sendRequest(alias){
     data: {action: 'add_friend',
            alias: alias},
     success: function(output){
+
+    }
+  });
+}
+
+function respondRequest(id){
+  $.ajax({
+    url: 'post_hub',
+    type: 'post',
+    data: {action: 'respond_request',
+           id: id},
+    success: function(output){
       console.log(output);
     }
   });
