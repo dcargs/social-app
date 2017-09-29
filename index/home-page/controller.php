@@ -50,11 +50,10 @@
       }
     }
 
-    public function add_friend(){
+    private function add_friend(){
       $me = $_SESSION['alias'];
       $alias = $_POST['alias'];
       echo "" . $me . $alias;
-      echo "punk kill";
     }
 
     private function get_people(){
