@@ -17,6 +17,14 @@
       return $result;
     }
 
+    public function send_request($me, $alias){
+      $stmt = $this->conn->prepare(
+        "INSERT INTO friends (user1, user2, accepted) VALUES (?,?,0)"
+      );
+      $stmt->bind_param("ss", $me, $alias);
+      $stmt->execute();
+    }
+
   }
 
 

@@ -54,7 +54,7 @@
       session_start();
       $me = $_SESSION['alias'];
       $alias = $_POST['alias'];
-      echo "" . $me . $alias;
+      $this->friendDAL->send_request($me, $alias);
     }
 
     private function get_people(){
