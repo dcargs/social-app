@@ -9,9 +9,10 @@
       $me = $_SESSION['alias'];
       $stmt = $this->conn->prepare(
         "SELECT alias AS Alias, f_name AS 'First Name', m_name AS 'Middle Name', l_name AS 'Last Name' FROM user
-        WHERE alias NOT LIKE ? AND alias NOT IN (SELECT user1, user2 FROM friends WHERE user1 = ? OR user2 = ?)"
+        WHERE alias NOT LIKE ? AND alias NOT IN (SELECT user2 FROM friends WHERE user1 = ? OR user2 = ?)
+        AND alias NOT IN (SELECT user1 FROM friends WHERE user1 = ? OR user2 = ?)"
       );
-      $stmt->bind_param("sss", $me, $me, $me);
+      $stmt->bind_param("sssss", $me, $me, $me, $me, $me);
       $stmt->execute();
       $result = $stmt->get_result();
       return $result;
