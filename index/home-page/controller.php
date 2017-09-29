@@ -2,11 +2,19 @@
 
   class home_controller {
     private $homeDAL;
+    private $friendDAL;
+    private $messageDAL;
 
     function __construct() {
       require ("model/homeDAL.php");
+      require ("model/friendDAL.php");
+      require ("model/messageDAL.php");
       $this->homeDAL = new homeDAL;
+      $this->friendDAL = new friendDAL;
+      $this->messageDAL = new messageDAL;
     }
+
+    // Start views
 
     public function landing(){
       require "views/landing.php";
@@ -25,6 +33,12 @@
     public function friends(){
 
       require "views/friends.php";
+    }
+
+    // End views
+
+    private function get_people(){
+
     }
 
     public function create_account(){
