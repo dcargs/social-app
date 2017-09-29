@@ -1,7 +1,9 @@
 $(function(){
   $("#login").hide();
   $("#createAccount").hide();
-  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+  $("nav[role=navigation] a").click(function(e){
+    $(this).attr("active", true);
+  });
 });
 
 function loginForm(){
