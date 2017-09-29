@@ -9,15 +9,18 @@
   while($fieldName = mysqli_fetch_field($result)) {
     $people .= "<th class='text-center'>" . $fieldName->name . "</th>";
   }
-  $people .= "<th colspan='2' class='text-center'>Options</th>";
+  $people .= "<th class='text-center'>Request</th>";
   $people .= "</thead><tbody>";
   while($row = $result->fetch_array(MYSQLI_NUM)) {
     $people .= "<tr>";
       foreach ($row as $i => $value) {
         $people .= "<td>".$value."</td>";
       }
+      $alias = "'".$row[0]."'";
+      $people .= "<td><button type='button' class='btn btn-success btn-md' onclick='sendRequest(".$alias.")'>Login</button></td>"
     $people .= "</tr>";
   }
+  $people .= "</tbody></table>";
 
   $content = "<div class='jumbotron'>
                 ".$people."
