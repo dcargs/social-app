@@ -50,7 +50,7 @@
       }
     }
 
-    private function add_friend(){
+    public function add_friend(){
       $me = $_SESSION['alias'];
       $alias = $_POST['alias'];
       echo "" . $me . $alias;
