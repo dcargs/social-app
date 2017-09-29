@@ -37,6 +37,25 @@
 
     // End views
 
+    public function post_hub(){
+      if(isset($_POST['action'])){
+        $action = $_POST['action'];
+        switch ($action) {
+          case 'add_friend': $this->add_friend(); break;
+
+          default: echo "case not defined in post_hub"; break;
+        }
+      } else {
+        echo "something went wrong";
+      }
+    }
+
+    private function add_friend(){
+      $me = $_SESSION['alias'];
+      $alias = $_POST['alias'];
+      echo $me . $alias;
+    }
+
     private function get_people(){
       $people = $this->friendDAL->get_everyone();
       return $people;

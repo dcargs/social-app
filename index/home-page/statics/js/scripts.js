@@ -4,8 +4,16 @@ $(function(){
 });
 
 function sendRequest(alias){
-  $("#" + alias).attr("disabled", true);
-  console.log(alias);
+  $("#" + alias).attr("disabled", true).html("Friend Request Sent");
+  $.ajax({
+    url: 'home/post_hub',
+    type: 'post',
+    data: {action: 'add_friend',
+           alias: alias},
+    success: function(output){
+      console.log(output);
+    }
+  });
 }
 
 function loginForm(){

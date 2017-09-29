@@ -15,6 +15,8 @@
       $controller->messages();
     } elseif($req2 == "friends"){
       $controller->friends();
+    } elseif($req2 == "post_hub"){
+      $controller->post_hub();
     }
   }
  ?>
