@@ -20,9 +20,7 @@
         <div role="navigation">
           <nav role="navigation">
             <ul class="nav nav-pills pull-right">
-              <!-- <li><a href="#">Item 1</a></li>
-              <li><a href="#">Item 2</a></li>
-              <li><a href="#">Item 3</a></li> -->
+              <?php echo $navbar_items; ?>
             </ul>
           </nav>
           <h2 class="text-muted"><?php echo $onscreen_title; ?></h2>

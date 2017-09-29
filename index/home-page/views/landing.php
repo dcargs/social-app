@@ -1,6 +1,7 @@
 <?php
   $title = "Welcome Back";
   $onscreen_title = "Login";
+  $navbar_items = "";
   $content = "<div class='jumbotron'>
                 <div class='row text-center'>
                   <h2>Please login or create an account</h2>
