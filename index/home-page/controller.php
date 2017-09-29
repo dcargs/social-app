@@ -53,6 +53,7 @@
     }
 
     private function respond_request(){
+      session_start();
       $me = $_SESSION['alias'];
       $id = $_POST['id'];
       $this->friendDAL->respond_request($id, $me);
