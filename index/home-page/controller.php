@@ -33,7 +33,6 @@
     public function friends(){
       $everyone = $this->get_people();
       $requests = $this->get_requests();
-      print_r($requests);
       //require "views/friends.php";
     }
 
