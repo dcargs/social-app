@@ -53,7 +53,7 @@
     private function add_friend(){
       $me = $_SESSION['alias'];
       $alias = $_POST['alias'];
-      echo $me . $alias;
+      echo "" . $me . $alias;
     }
 
     private function get_people(){
