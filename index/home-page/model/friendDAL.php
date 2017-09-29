@@ -6,7 +6,7 @@
   class friendDAL extends db {
     public function get_everyone(){
       $stmt = $this->conn->prepare(
-        "SELECT alias, f_name, m_name, l_name FROM user"
+        "SELECT alias AS Alias, f_name AS 'First Name', m_name AS 'Middle Name', l_name AS 'Last Name' FROM user"
       );
       $stmt->execute();
       $result = $stmt->get_result();
