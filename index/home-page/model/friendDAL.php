@@ -32,7 +32,7 @@
       $stmt->bind_param("s", $me);
       $stmt->execute();
       $result = $stmt->get_result();
-      print_r($result);
+      return $result;
     }
 
   }
