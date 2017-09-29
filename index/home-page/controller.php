@@ -53,7 +53,8 @@
 
     private function get_requests(){
       $me = $_SESSION['alias'];
-      return $this->friendDAL->get_requests($me);
+      $requests = $this->friendDAL->get_requests($me);
+      return $requests;
     }
 
     private function add_friend(){
