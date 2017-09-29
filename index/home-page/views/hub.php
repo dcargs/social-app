@@ -2,7 +2,7 @@
   $title = "Your Profile";
   $onscreen_title = "My Profile";
   $alias = $_SESSION['alias'];
-  $navbar_items = "<li><a href='hub'>Profile</a></li>
+  $navbar_items = "<li class='active'><a href='hub'>Profile</a></li>
                    <li><a href='friends'>Friends</a></li>
                    <li><a href='messages'>Messages</a></li>";
   $content = "
