@@ -52,7 +52,6 @@
     }
 
     private function get_requests(){
-      session_start();
       $me = $_SESSION['alias'];
       return $this->friendDAL->get_requests($me);
     }
