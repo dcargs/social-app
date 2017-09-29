@@ -23,7 +23,7 @@
   $people .= "</tbody></table>";
 
   $friend_requests = "<div class='well'>";
-  while($row = $requests->fetch_assoc()){
+  while($row = $requests->fetch_array(MYSQLI_NUM)){
     $friend_requests .= "<div class='row'>";
     $friend_requests .= "<p>".$row['user2']." sent you a friend request.</p>";
     $friend_requests .= "<button type='button' id='".$row['id']."' class='btn btn-primary btn-block' onclick='respondRequest(".$row['id'].")'>Accept</button>";
