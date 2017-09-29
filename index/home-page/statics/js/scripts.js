@@ -23,7 +23,7 @@ function respondRequest(id){
     data: {action: 'respond_request',
            id: id},
     success: function(output){
-      console.log(output);
+      location.href = "/home/friends";
     }
   });
 }
