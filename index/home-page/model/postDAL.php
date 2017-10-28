@@ -26,7 +26,7 @@
     public function create_post(){
       if (!isset($_SESSION)) { session_start(); }
       $me = $_SESSION['alias'];
-      if(isset($_POST['data'])){
+      if(isset($_POST['post'])){
         $post_form = explode("&", $_POST['post']);
         $temp_post = explode("=", $post_form[0]);
         $post = $this->char_replace($temp_post[1]);
