@@ -46,6 +46,7 @@
       $string = str_replace("%0D", "\n", $string);
       $string = str_replace("%0A", "", $string);
       $string = str_replace("%2F", "/", $string);
+      $string = str_replace("%3F", "?", $string);
       return $string;
     }
 
