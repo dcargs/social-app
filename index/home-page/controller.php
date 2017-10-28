@@ -25,7 +25,7 @@
 
     public function hub(){
       $this->check_status(); //for security
-
+      $post_types = $this->postDAL->get_post_types();
       require "views/hub.php";
     }
 
