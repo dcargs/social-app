@@ -20,12 +20,6 @@
               <label for='post'>Share a post with the world:</label>
               <textarea class='form-control' rows='5' name='post'></textarea>
             </div>
-            <div class='form-group'>
-              <label for='post_type'>Post Type:</label>
-              <select class='form-control' name='post_type'>
-                ".$post_types."
-              </select>
-            </div>
             <button class='btn btn-primary' onclick='create_post()'>Submit</button>
           </form>
         </div>
