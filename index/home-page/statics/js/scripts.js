@@ -13,6 +13,7 @@ function create_post(){
       window.location = "/home/hub";
     }
   });
+  window.location = "/home/hub";
 }
 
 function sendRequest(alias){
