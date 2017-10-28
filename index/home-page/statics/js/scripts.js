@@ -10,7 +10,7 @@ function create_post(){
     data: {action: 'create_post',
            data: $("#post_form").serialize()},
     success: function(output){
-      window.location.href = "/home/hub";
+      window.location = "/home/hub";
     }
   });
 }
