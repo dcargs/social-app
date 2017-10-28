@@ -16,7 +16,11 @@
       <div class='row'>
 
         <div class='col-md-offset-3 col-md-6 col-md-offset-3 text-center'>
-          <h3>Share a post with the world:</h3>
+          <h4>Share a post with the world:</h4><br>
+          <div class='form-group'>
+            <label for='post'>Post:</label>
+            <textarea class='form-control' rows='5' id='post'></textarea>
+          </div>
         </div>
 
       </div>
