@@ -3,7 +3,8 @@
   $onscreen_title = "Connect with your friends";
   $navbar_items = "<li><a href='hub'>Profile</a></li>
                    <li class='active'><a href='friends'>Friends</a></li>
-                   <li><a href='messages'>Messages</a></li>";
+                   <li><a href='messages'>Messages</a></li>
+                   <li><a href='logout'>Logout</a></li>";
 
   $people = "<h2><span class='label label-primary'>List of Users</span></h2><table style='overflow: auto;'class='table rounded table-striped table-responsive table-bordered'><thead>";
   while($fieldName = mysqli_fetch_field($everyone)) {

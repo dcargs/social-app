@@ -49,6 +49,18 @@
 
     }
 
+    public function logout(){
+      session_unset();
+      if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000,
+          $params["path"], $params["domain"],
+          $params["secure"], $params["httponly"]);
+      }
+      session_destroy();
+      header("Location: /home");
+    }
+
     // returns 0 if exist and 1 if not
     private function check_exist($alias){
       $stmt = $this->conn->prepare(

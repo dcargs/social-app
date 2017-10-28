@@ -21,16 +21,17 @@
     }
 
     public function hub(){
-      $this->check_status();
+      $this->check_status(); //for security
       require "views/hub.php";
     }
 
     public function messages(){
-
+      $this->check_status(); //for security
       require "views/messages.php";
     }
 
     public function friends(){
+      $this->check_status(); //for security
       $everyone = $this->get_people();
       $requests = $this->get_requests();
       $friends = $this->get_friends();
@@ -90,6 +91,10 @@
 
     public function login(){
       $this->homeDAL->login();
+    }
+
+    public function logout(){
+      $this->homeDAL->logout();
     }
 
     private function check_status(){

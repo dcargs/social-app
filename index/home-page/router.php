@@ -17,6 +17,8 @@
       $controller->friends();
     } elseif($req2 == "post_hub"){
       $controller->post_hub();
+    } elseif($req2 == "logout"){
+      $controller->logout();
     }
   }
  ?>
