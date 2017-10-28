@@ -35,7 +35,7 @@
         );
         $stmt->bind_param("ss", $post, $me);
         $stmt->execute();
-
+        header("Location: /home/hub");
       } else {
         echo "something went wrong in posting your post";
       }

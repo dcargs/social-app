@@ -10,10 +10,10 @@ function create_post(){
     data: {action: 'create_post',
            post: $("#post_form").serialize()},
     success: function(output){
-      window.location = "/home/hub";
+      // window.location = "/home/hub";
     }
   });
-  window.location = "/home/hub";
+
 }
 
 function sendRequest(alias){
