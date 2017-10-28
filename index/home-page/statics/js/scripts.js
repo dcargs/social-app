@@ -3,6 +3,18 @@ $(function(){
   $("#createAccount").hide();
 });
 
+function post(){
+  $.ajax({
+    url: 'post_hub',
+    type: 'post',
+    data: {action: 'create_post',
+           data: $("#post_form").serialize()},
+    success: function(output){
+      console.log(output);
+    }
+  });
+}
+
 function sendRequest(alias){
   $("#" + alias).attr("disabled", true).html("Friend Request Sent");
   $.ajax({

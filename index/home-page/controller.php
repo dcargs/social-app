@@ -4,14 +4,17 @@
     private $homeDAL;
     private $friendDAL;
     private $messageDAL;
+    private $postDAL;
 
     function __construct() {
       require ("model/homeDAL.php");
       require ("model/friendDAL.php");
       require ("model/messageDAL.php");
+      require ("model/postDAL.php");
       $this->homeDAL = new homeDAL;
       $this->friendDAL = new friendDAL;
       $this->messageDAL = new messageDAL;
+      $this->postDAL = new postDAL;
     }
 
     // Start views
@@ -22,7 +25,7 @@
 
     public function hub(){
       $this->check_status(); //for security
-      
+
       require "views/hub.php";
     }
 
@@ -48,6 +51,7 @@
         switch ($action) {
           case 'add_friend': $this->add_friend(); break;
           case 'respond_request': $this->respond_request(); break;
+          case 'create_post': $this->postDAL->create_post(); break;
 
           default: echo "case not defined in post_hub"; break;
         }
