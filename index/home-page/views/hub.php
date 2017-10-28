@@ -12,7 +12,15 @@
         <h2>Welcome to your profile, ".$alias."</h2>
       </div>
       <hr />
-      
+
+      <div class='row'>
+
+        <div class='col-md-offset-3 col-md-6 col-md-offset-3 text-center'>
+          <h3>Share a post with the world:</h3>
+        </div>
+
+      </div>
+
     </div> <!-- end jumbotron -->
   ";
 
