@@ -14,7 +14,6 @@
       <hr />
 
       <div class='row'>
-
         <div class='col-md-offset-3 col-md-6 col-md-offset-3'>
           <form class='form-horizontal' id='post_form'>
             <div class='form-group'>
@@ -30,7 +29,10 @@
             <button class='btn btn-primary' onclick='create_post()'>Submit</button>
           </form>
         </div>
+      </div>
 
+      <div class='row'>
+        ".$posts."
       </div>
 
     </div> <!-- end jumbotron -->

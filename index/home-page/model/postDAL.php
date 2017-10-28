@@ -5,6 +5,24 @@
    */
   class postDAL extends db {
 
+    public function get_posts(){
+      $stmt = $this->conn->prepare(
+        "SELECT * FROM post"
+      );
+      $stmt->execute();
+      $result = $stmt->get_result();
+      $posts = "";
+      while ($row = $result->fetch_assoc()) {
+        $posts .= "<div class='col-md-offset-3 col-md-6 col-md-offset-3'>
+                    <div class='panel panel-default'>
+                      <div class='panel-heading'>".$row['user']."</div>
+                      <div class='panel-body'>".$row['content']."</div>
+                    </div>
+                   </div>";
+      }
+      return $posts;
+    }
+
     public function create_post(){
       if (!isset($_SESSION)) { session_start(); }
       $me = $_SESSION['alias'];
