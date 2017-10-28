@@ -35,7 +35,7 @@
 
       <div class='row'>
         <div class='row'>
-          <div class='col-md-offset-3'>
+          <div class='col-md-offset-3 col-md-6 col-md-offset-3'>
             <h4>Posts</h4>
           </div>
         </div>
