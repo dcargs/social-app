@@ -34,7 +34,7 @@
       <hr />
 
       <div class='row'>
-        <div class='row text-center'>
+        <div class='row'>
           <h4>Posts</h4>
         </div>
         ".$posts."
