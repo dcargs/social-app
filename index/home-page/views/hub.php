@@ -20,7 +20,7 @@
             <div class='form-group'>
               <label for='post'>Share a post with the world:</label>
               <textarea class='form-control' rows='5' name='post'></textarea>
-              <button class='btn btn-primary' onclick='post()'>Submit</button>
+              <button class='btn btn-primary' onclick='create_post()'>Submit</button>
             </div>
           </form>
         </div>

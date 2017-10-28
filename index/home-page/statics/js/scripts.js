@@ -3,7 +3,7 @@ $(function(){
   $("#createAccount").hide();
 });
 
-function post(){
+function create_post(){
   $.ajax({
     url: 'post_hub',
     type: 'post',
