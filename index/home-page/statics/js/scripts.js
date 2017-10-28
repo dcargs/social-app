@@ -8,7 +8,7 @@ function create_post(){
     url: 'post_hub',
     type: 'post',
     data: {action: 'create_post',
-           data: $("#post_form").serialize()},
+           post: $("#post_form").serialize()},
     success: function(output){
       window.location = "/home/hub";
     }

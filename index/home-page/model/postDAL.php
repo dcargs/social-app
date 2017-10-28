@@ -27,7 +27,7 @@
       if (!isset($_SESSION)) { session_start(); }
       $me = $_SESSION['alias'];
       if(isset($_POST['data'])){
-        $post_form = explode("&", $_POST['data']);
+        $post_form = explode("&", $_POST['post']);
         $temp_post = explode("=", $post_form[0]);
         $post = $this->char_replace($temp_post[1]);
         $stmt = $this->conn->prepare(
