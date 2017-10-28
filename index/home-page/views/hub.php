@@ -12,7 +12,7 @@
         <h2>Welcome to your profile, ".$alias."</h2>
       </div>
       <hr />
-
+      
     </div> <!-- end jumbotron -->
   ";
 

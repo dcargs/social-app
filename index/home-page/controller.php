@@ -22,6 +22,7 @@
 
     public function hub(){
       $this->check_status(); //for security
+      
       require "views/hub.php";
     }
 
