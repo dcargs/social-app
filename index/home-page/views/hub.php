@@ -31,6 +31,8 @@
         </div>
       </div>
 
+      <hr />
+
       <div class='row'>
         ".$posts."
       </div>
